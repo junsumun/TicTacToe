@@ -173,7 +173,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="375" y="133"/>
+            <point key="canvasLocation" x="409" y="133"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dqe-Gq-NoS">
@@ -201,11 +201,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main Menu Background" translatesAutoresizingMaskIntoConstraints="NO" id="rri-u1-NbB">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mcdonald's Lynn Light" translatesAutoresizingMaskIntoConstraints="NO" id="MQP-8K-0Jb">
-                                <rect key="frame" x="37" y="319" width="310" height="143"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mcdonald's Lynn Light" translatesAutoresizingMaskIntoConstraints="NO" id="Rll-1A-ZcE" userLabel="Lynn Light">
+                                <rect key="frame" x="12.5" y="318.5" width="350" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="ZSc-BD-ZdF"/>
+                                    <constraint firstAttribute="height" constant="150" id="yeH-Cx-3IL"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDh-IG-7D0">
+                            <button contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDh-IG-7D0">
                                 <rect key="frame" x="112" y="365" width="170" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="170" id="0iZ-Q3-sDW"/>
@@ -213,12 +216,20 @@
                                 </constraints>
                                 <state key="normal" image="Mcdonald's Lynn Button"/>
                                 <connections>
-                                    <action selector="case3:" destination="tZx-Dl-nRn" eventType="touchUpOutside" id="VTg-ef-W6H"/>
                                     <action selector="mode1ClickedDown:" destination="tZx-Dl-nRn" eventType="touchDown" id="dsr-Tz-1rl"/>
+                                    <action selector="mode1DraggedOut:" destination="tZx-Dl-nRn" eventType="touchDragOutside" id="g7H-GM-9PX"/>
+                                    <action selector="mode1UpOutside:" destination="tZx-Dl-nRn" eventType="touchUpOutside" id="VUw-aB-r89"/>
                                     <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="JxU-3E-l2D"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6m-V8-QXl">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mcdonald's Friend Light" translatesAutoresizingMaskIntoConstraints="NO" id="3k8-wM-tRS" userLabel="Friend Light">
+                                <rect key="frame" x="12" y="394.5" width="350" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="UNT-Wt-hjK"/>
+                                    <constraint firstAttribute="height" constant="150" id="vco-FF-T8S"/>
+                                </constraints>
+                            </imageView>
+                            <button contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6m-V8-QXl" userLabel="Friend Button">
                                 <rect key="frame" x="112.5" y="439.5" width="170" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="170" id="YAp-Eb-xjH"/>
@@ -226,52 +237,79 @@
                                 </constraints>
                                 <state key="normal" image="Mcdonald's Friend Button"/>
                                 <connections>
-                                    <action selector="test2:" destination="tZx-Dl-nRn" eventType="touchUpInside" id="j7n-gF-d0o"/>
+                                    <action selector="mode2ClickedDown:" destination="tZx-Dl-nRn" eventType="touchDown" id="H6B-rN-PO6"/>
+                                    <action selector="mode2DraggedOut:" destination="tZx-Dl-nRn" eventType="touchDragOutside" id="njL-gd-Wsn"/>
+                                    <action selector="mode2UpOutside:" destination="tZx-Dl-nRn" eventType="touchUpOutside" id="dW8-wE-2vJ"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="I7u-MX-z03"/>
                                 </connections>
                             </button>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mcdonald's World Button" translatesAutoresizingMaskIntoConstraints="NO" id="lKB-RG-uvf">
-                                <rect key="frame" x="112" y="511" width="170" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="9Hv-T3-Bsh" appends="YES" id="nl8-4G-InK"/>
-                                </connections>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mcdonald's World Light" translatesAutoresizingMaskIntoConstraints="NO" id="tt9-5h-Bjc" userLabel="World Light">
+                                <rect key="frame" x="12" y="464.5" width="350" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="9FZ-YT-eJo"/>
+                                    <constraint firstAttribute="width" constant="350" id="QiO-sb-dyU"/>
+                                </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruQ-QD-R0V" userLabel="World Button">
+                                <rect key="frame" x="112.5" y="513.5" width="170" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="OmD-6L-ugP"/>
+                                    <constraint firstAttribute="height" constant="44" id="Zsr-YB-yvL"/>
+                                </constraints>
+                                <state key="normal" image="Mcdonald's World Button"/>
+                                <connections>
+                                    <action selector="mode3ClickedDown:" destination="tZx-Dl-nRn" eventType="touchDown" id="cbu-ji-wws"/>
+                                    <action selector="mode3DraggedOut:" destination="tZx-Dl-nRn" eventType="touchDragOutside" id="RAC-Va-PHr"/>
+                                    <action selector="mode3UpOutside:" destination="tZx-Dl-nRn" eventType="touchUpOutside" id="3VL-bk-fT1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="tt9-5h-Bjc" firstAttribute="centerY" secondItem="354-Fq-YMc" secondAttribute="centerY" constant="206" id="2qf-Em-Cm9"/>
                             <constraint firstItem="rDh-IG-7D0" firstAttribute="centerX" secondItem="354-Fq-YMc" secondAttribute="centerX" constant="10" id="3hM-hG-w6C"/>
                             <constraint firstItem="rri-u1-NbB" firstAttribute="leading" secondItem="8Sx-oo-hx5" secondAttribute="leading" id="9rO-ft-na4"/>
                             <constraint firstItem="Y6m-V8-QXl" firstAttribute="centerX" secondItem="354-Fq-YMc" secondAttribute="centerX" constant="10" id="LXV-hr-Akc"/>
+                            <constraint firstItem="Rll-1A-ZcE" firstAttribute="centerY" secondItem="354-Fq-YMc" secondAttribute="centerY" constant="60" id="OlK-Nz-x3n"/>
+                            <constraint firstItem="tt9-5h-Bjc" firstAttribute="centerX" secondItem="354-Fq-YMc" secondAttribute="centerX" id="VaX-Mr-3Pb"/>
+                            <constraint firstItem="Rll-1A-ZcE" firstAttribute="centerX" secondItem="354-Fq-YMc" secondAttribute="centerX" id="Vch-ZL-srg"/>
+                            <constraint firstItem="ruQ-QD-R0V" firstAttribute="centerX" secondItem="354-Fq-YMc" secondAttribute="centerX" constant="10" id="aKq-dW-XBs"/>
                             <constraint firstItem="rDh-IG-7D0" firstAttribute="centerY" secondItem="354-Fq-YMc" secondAttribute="centerY" constant="54" id="d27-XS-9L2"/>
+                            <constraint firstItem="3k8-wM-tRS" firstAttribute="centerY" secondItem="354-Fq-YMc" secondAttribute="centerY" constant="136" id="djK-xN-aol"/>
+                            <constraint firstItem="3k8-wM-tRS" firstAttribute="centerX" secondItem="354-Fq-YMc" secondAttribute="centerX" id="kkI-YR-Ejc"/>
                             <constraint firstItem="Y6m-V8-QXl" firstAttribute="top" secondItem="rDh-IG-7D0" secondAttribute="bottom" constant="30" id="lce-yq-qF1"/>
                             <constraint firstItem="rri-u1-NbB" firstAttribute="trailing" secondItem="8Sx-oo-hx5" secondAttribute="trailing" id="oJV-8x-Y16"/>
+                            <constraint firstItem="ruQ-QD-R0V" firstAttribute="top" secondItem="Y6m-V8-QXl" secondAttribute="bottom" constant="30" id="sp6-1S-bPC"/>
                             <constraint firstItem="rri-u1-NbB" firstAttribute="top" secondItem="354-Fq-YMc" secondAttribute="top" id="x5E-Y6-rhl"/>
                             <constraint firstItem="rri-u1-NbB" firstAttribute="bottom" secondItem="8Sx-oo-hx5" secondAttribute="bottom" id="zZX-bY-PKJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8Sx-oo-hx5"/>
                     </view>
                     <connections>
+                        <outlet property="friendbutton" destination="Y6m-V8-QXl" id="YXN-JE-mlo"/>
+                        <outlet property="friendlight" destination="3k8-wM-tRS" id="39A-9U-29s"/>
                         <outlet property="lynnbutton" destination="rDh-IG-7D0" id="vVC-pk-fOC"/>
-                        <outlet property="lynnlight" destination="MQP-8K-0Jb" id="rUX-C6-JVm"/>
+                        <outlet property="lynnlight" destination="Rll-1A-ZcE" id="1kc-45-lUf"/>
+                        <outlet property="worldbutton" destination="ruQ-QD-R0V" id="d2T-Vh-A1d"/>
+                        <outlet property="worldlight" destination="tt9-5h-Bjc" id="TVH-g3-shU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7uW-xg-U2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="9Hv-T3-Bsh">
-                    <connections>
-                        <action selector="test:" destination="tZx-Dl-nRn" id="HdW-mM-kyV"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-498.39999999999998" y="132.68365817091455"/>
         </scene>
     </scenes>
     <resources>
         <image name="Background.png" width="1024" height="1024"/>
-        <image name="Main Menu Background" width="750" height="1334"/>
-        <image name="Mcdonald's Friend Button" width="349" height="89"/>
-        <image name="Mcdonald's Lynn Button" width="349" height="89"/>
-        <image name="Mcdonald's Lynn Light" width="750" height="297"/>
-        <image name="Mcdonald's World Button" width="349" height="89"/>
+        <image name="Main Menu Background" width="375" height="667"/>
+        <image name="Mcdonald's Friend Button" width="174" height="44"/>
+        <image name="Mcdonald's Friend Light" width="375" height="145"/>
+        <image name="Mcdonald's Lynn Button" width="174" height="44"/>
+        <image name="Mcdonald's Lynn Light" width="375" height="148"/>
+        <image name="Mcdonald's World Button" width="174" height="44"/>
+        <image name="Mcdonald's World Light" width="375" height="148"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="I7u-MX-z03"/>
+    </inferredMetricsTieBreakers>
 </document>
