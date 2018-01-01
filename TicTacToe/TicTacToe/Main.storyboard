@@ -32,68 +32,104 @@
                                     <segue destination="tZx-Dl-nRn" kind="show" animates="NO" id="kfR-Dx-6h5"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mcdonald's Burger" translatesAutoresizingMaskIntoConstraints="NO" id="5kg-xj-D1P" userLabel="0.0">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5kg-xj-D1P" userLabel="0.0">
                                 <rect key="frame" x="30" y="156" width="74" height="74"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="74" id="WPi-uz-ppT"/>
                                     <constraint firstAttribute="height" constant="74" id="cfj-Pl-DGV"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="wKo-Zm-FiL" appends="YES" id="vEa-3O-sGb"/>
+                                </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mcdonald's Burger" translatesAutoresizingMaskIntoConstraints="NO" id="jji-KV-PSA" userLabel="0.1">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jji-KV-PSA" userLabel="0.1">
                                 <rect key="frame" x="150" y="156" width="74" height="74"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="74" id="YRo-h9-5pO"/>
                                     <constraint firstAttribute="width" constant="74" id="xfW-Mu-dLw"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="psI-ss-zWr" appends="YES" id="S4K-Qa-fZK"/>
+                                </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mcdonald's Burger" translatesAutoresizingMaskIntoConstraints="NO" id="eX7-t8-na9" userLabel="0.2">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eX7-t8-na9" userLabel="0.2">
                                 <rect key="frame" x="270" y="156" width="74" height="74"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="74" id="NPd-H7-gd6"/>
                                     <constraint firstAttribute="width" constant="74" id="cXB-10-75C"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="6ve-J8-y9W" appends="YES" id="bNa-mZ-8eI"/>
+                                </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mcdonald's Burger" translatesAutoresizingMaskIntoConstraints="NO" id="78d-4d-MJl" userLabel="1.0">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="78d-4d-MJl" userLabel="1.0">
                                 <rect key="frame" x="30.5" y="296.5" width="74" height="74"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="74" id="luD-C3-y6J"/>
                                     <constraint firstAttribute="width" constant="74" id="yvw-dg-QaW"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="jM4-HT-BYs" appends="YES" id="7sY-k7-fxA"/>
+                                </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mcdonald's Burger" translatesAutoresizingMaskIntoConstraints="NO" id="eLv-uy-IFT" userLabel="1.1">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eLv-uy-IFT" userLabel="1.1">
                                 <rect key="frame" x="150.5" y="296.5" width="74" height="74"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="74" id="YW5-QJ-eUh"/>
                                     <constraint firstAttribute="width" constant="74" id="dIO-IF-Q3V"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="SYk-gE-YHf" appends="YES" id="F4X-qK-oMy"/>
+                                </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mcdonald's Burger" translatesAutoresizingMaskIntoConstraints="NO" id="qj5-qE-GAV" userLabel="1.2">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qj5-qE-GAV" userLabel="1.2">
                                 <rect key="frame" x="270" y="296" width="74" height="74"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="74" id="IF2-DR-9UR"/>
                                     <constraint firstAttribute="width" constant="74" id="dGt-5e-Yrt"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="yjX-6s-Qco" appends="YES" id="jPH-Rm-BLG"/>
+                                </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mcdonald's Burger" translatesAutoresizingMaskIntoConstraints="NO" id="rPp-eY-xSK" userLabel="2.0">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rPp-eY-xSK" userLabel="2.0">
                                 <rect key="frame" x="30" y="436" width="74" height="74"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="74" id="b0u-Jl-dz1"/>
                                     <constraint firstAttribute="width" constant="74" id="cs0-1M-gZJ"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="RQm-8p-Zyi" appends="YES" id="Dzd-fz-j9F"/>
+                                </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mcdonald's Burger" translatesAutoresizingMaskIntoConstraints="NO" id="dTM-4M-kM8" userLabel="2.1">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dTM-4M-kM8" userLabel="2.1">
                                 <rect key="frame" x="150.5" y="436.5" width="74" height="74"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="74" id="IbN-fA-56w"/>
                                     <constraint firstAttribute="width" constant="74" id="PAR-oT-wBi"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="eZU-Wf-aeV" appends="YES" id="A6q-Gq-gk8"/>
+                                </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mcdonald's Burger" translatesAutoresizingMaskIntoConstraints="NO" id="OXh-k6-3J9" userLabel="2.2">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OXh-k6-3J9" userLabel="2.2">
                                 <rect key="frame" x="270.5" y="436.5" width="74" height="74"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="74" id="5UO-ks-G5S"/>
                                     <constraint firstAttribute="width" constant="74" id="KR5-An-gkV"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="TIW-uj-HHW" appends="YES" id="g9k-HF-km6"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <constraints>
@@ -125,8 +161,64 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="1dp-st-cZF"/>
+                    <connections>
+                        <outlet property="one1" destination="5kg-xj-D1P" id="FjV-fT-ZlB"/>
+                        <outlet property="one2" destination="jji-KV-PSA" id="nWm-7R-eo9"/>
+                        <outlet property="one3" destination="eX7-t8-na9" id="WXJ-6B-8jX"/>
+                        <outlet property="three1" destination="rPp-eY-xSK" id="WuC-2Q-mF4"/>
+                        <outlet property="three2" destination="dTM-4M-kM8" id="cBc-rc-HVw"/>
+                        <outlet property="three3" destination="OXh-k6-3J9" id="nef-Dv-YJh"/>
+                        <outlet property="two1" destination="78d-4d-MJl" id="Jki-Jv-Hn2"/>
+                        <outlet property="two2" destination="eLv-uy-IFT" id="PwL-qU-eWQ"/>
+                        <outlet property="two3" destination="qj5-qE-GAV" id="zPE-JF-rd6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="wKo-Zm-FiL" userLabel="0.0 Tap">
+                    <connections>
+                        <action selector="one1Tapped:" destination="BYZ-38-t0r" id="2Zr-T7-L9i"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="psI-ss-zWr" userLabel="0.1 Tap">
+                    <connections>
+                        <action selector="one2Tapped:" destination="BYZ-38-t0r" id="zbU-jG-oLZ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="6ve-J8-y9W" userLabel="0.2 Tap">
+                    <connections>
+                        <action selector="one3Tapped:" destination="BYZ-38-t0r" id="K2X-jR-cE9"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="jM4-HT-BYs" userLabel="1.0 Tap">
+                    <connections>
+                        <action selector="two1Tapped:" destination="BYZ-38-t0r" id="TEe-HD-Bv2"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="SYk-gE-YHf" userLabel="1.1 Tap">
+                    <connections>
+                        <action selector="two2Tapped:" destination="BYZ-38-t0r" id="BRm-VX-SDr"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="yjX-6s-Qco" userLabel="1.2 Tap">
+                    <connections>
+                        <action selector="two3Tapped:" destination="BYZ-38-t0r" id="hhH-Mv-H6M"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="RQm-8p-Zyi" userLabel="2.0 Tap">
+                    <connections>
+                        <action selector="three1Tapped:" destination="BYZ-38-t0r" id="Jnk-So-adW"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="eZU-Wf-aeV" userLabel="2.1 Tap">
+                    <connections>
+                        <action selector="three2Tapped:" destination="BYZ-38-t0r" id="E65-jr-9f5"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="TIW-uj-HHW" userLabel="2.2 Tap">
+                    <connections>
+                        <action selector="three3Tapped:" destination="BYZ-38-t0r" id="2Qh-rl-CsS"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="408.80000000000001" y="132.68365817091455"/>
         </scene>
@@ -243,7 +335,6 @@
         <image name="Basic Background" width="375" height="667"/>
         <image name="Main Menu Background" width="375" height="667"/>
         <image name="Mcdonald's Board" width="375" height="667"/>
-        <image name="Mcdonald's Burger" width="250" height="217"/>
         <image name="Mcdonald's Friend Button" width="174" height="44"/>
         <image name="Mcdonald's Friend Light" width="375" height="145"/>
         <image name="Mcdonald's Lynn Button" width="174" height="44"/>

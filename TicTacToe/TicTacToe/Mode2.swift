@@ -47,13 +47,13 @@ class Mode2: UIViewController {
     func tapEvent(imageview: UIImageView, x: Int, y: Int) {
         if imageview.image == nil {
             if turn==1{
-                imageview.image = UIImage(named: "X.png")
+                imageview.image = UIImage(named: "Mcdonald's Fries")
                 board[x][y] = turn
                 turn = 2
                 totalturn += 1
             }
             else{
-                imageview.image = UIImage(named: "O.png")
+                imageview.image = UIImage(named: "Mcdonald's Burger")
                 board[x][y] = turn
                 turn = 1
                 totalturn += 1
@@ -64,10 +64,10 @@ class Mode2: UIViewController {
     func printWinner(){
         let winner: Int = checkWinner()
         if winner == 1 {
-            print("X Player won")
+            print("Fries Player won")
         }
         else if winner == 2 {
-            print("O Player won")
+            print("Burger Player won")
         }
         else if totalturn == 9 && winner == -1 {
             print("Draw")
