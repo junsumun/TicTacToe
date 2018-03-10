@@ -1,5 +1,7 @@
 # TicTacToe
-A simple and very popular 3x3 grid board game.  
+A simple and very popular 3x3 grid board game written in Swift.  
+This project can be deployed to all the iPhone seriese since iPhone 6.  
+Using the constrain feature in Xcode made it possible.
 
 **Planning to support three different game modes:**  
 1. **You VS Lynn**: Lynn is a simple AI that plays TIC TAC TOE with a user.
