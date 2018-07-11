@@ -31,7 +31,3 @@ To test out this game on your device, please follow the instruction below carefu
   on how to make TicTacToe game algorithm, this project will still be very helpful.  
   **checkWinner() function** is the algorithm and you can find it from **Mode2 Class**.
   
-## Developer's Words
-Hopefully, this small project inspires other people, and if you have any questions about the code or if you find any bugs in the program. Feel free to contact me via my email jn218201@dal.ca.
-
-Have a great day!
